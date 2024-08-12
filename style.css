@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#loja {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #dddbdb;
+}
+
+header {
+    background-color: rgb(0, 110, 255);
+    color: white;
+    padding: 16px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+    padding: 32px 0;
+    margin-right: 16px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header h1 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sobretudo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 64px;
+    padding-top: 56px
+}
+
+h2 {
+    color:  rgb(0, 110, 255);
+    border-bottom: 2px solid  rgb(0, 110, 255);
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    font-style: italic;
+}
+
+.sobretudo p {
+    font-size: 18px;
+}
+
+.sobre-texto {
+    margin-left: 32px;
+}
+
+.produtos ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 56px;
+}
+
+.produtos li {
+    list-style: none;
+    
+}
+
+.produtos li img {
+    height: auto;
+    width: 100%;
+}
+
+.produtos h3 {
+    font-size: 24px;
+}
+
+.produtos button {
+    width: 100%;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+.produtos p {
+    margin: 16px 0;
+}
+
+@media screen and (max-width: 640px) {
+    .sobretudo {
+        display: block;
+        margin-bottom: 64px;
+    }
+
+    .sobre-texto {
+        margin-left: 0;
+    }
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .produtos li {
+        margin-bottom: 56px;
+    }
+
+    header li {
+        display: flex;
+        list-style: none;
+        padding: 0 0;
+        margin-right: 0;
+    }
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        padding: 0 5%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    #loja {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 56px;
+    }
+    
+    .sobretudo {
+        display: block;
+        margin-bottom: 64px;
+    }
+
+    .sobre-texto {
+        margin-left: 0;
+    }
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .produtos li {
+        margin-bottom: 56px;
+    }
+
+    header li {
+        display: flex;
+        list-style: none;
+        padding: 0 0;
+        margin-right: 0;
+    }
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        padding: 0 5%;
+    }
+}
+
